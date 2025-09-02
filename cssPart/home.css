@@ -1,0 +1,184 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  background: url("../image/profile-image.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 400px;
+}
+
+.hero-text .welcome {
+  font-size: 1rem;
+  color: #bbb;
+  margin-top: 40px;
+  margin-left: 100px;
+  font-family: "Inter", sans-serif;
+}
+
+.hero-text h1 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-left: 100px;
+}
+
+/* Hero Right Side */
+.hero-image {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertical center */
+  align-items: flex-end; /* Right align */
+  text-align: right;
+  padding-right: 50px; /* Keep spacing from edge */
+}
+
+.hero-image .tagline {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #ccc;
+  max-width: 350px; /* Keeps text in one block */
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  background: #3366ff;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #1e4ed8;
+}
+
+.hero-image img {
+  max-width: 400px;
+  border-radius: 10px;
+}
+/* -----------about---------- */
+.section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* About */
+.about h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  font-family: "Inter", sans-serif;
+}
+.about p {
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+  max-width: 100%;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6; /* Proper line spacing */
+}
+
+.about p a {
+  color: #3ea6ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.about p .more {
+  display: block;
+  margin-top: 8px;
+  color: #3ea6ff;
+  font-size: 14px;
+}
+
+/* Work With */
+.work {
+  margin: 40px 0;
+}
+.work h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.work-logos {
+  display: flex;
+  justify-content: center;
+  gap: 180px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.work-logos img {
+  max-height: 60px;
+  filter: brightness(0) invert(1);
+  transition: 0.3s;
+}
+.work-logos img:hover {
+  transform: scale(1.1);
+}
+
+/* Services */
+.services h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+.service-box {
+  display: flex;
+  gap: 350px;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  border-radius: 10px;
+}
+.service-box img {
+  width: 50%;
+}
+.text-box {
+  text-align: right;
+  max-width: 400px;
+}
+
+.text-box h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.text-box h1 span {
+  display: block;
+}
+
+.text-box p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.arrow {
+  font-size: 24px;
+  margin-top: 15px;
+  color: #3ea6ff;
+  display: inline-block;
+}
