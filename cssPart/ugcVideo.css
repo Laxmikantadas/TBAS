@@ -1,0 +1,127 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #111;
+  color: #fff;
+  line-height: 1.6;
+}
+/* Portfolio Section */
+.portfolio-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+.portfolio-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Filter Menu */
+.filter-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 20px;
+  margin-bottom: 80px;
+  margin-top: 100px;
+}
+
+.filter-menu button {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-menu button:hover,
+.filter-menu button.active {
+  color: #fff;
+  text-decoration: underline;
+}
+/* Portfolio Grid - Masonry Layout */
+/* Portfolio Grid - Row Layout */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+  gap: 15px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.portfolio-grid div {
+  margin: 0; /* no extra bottom spacing */
+}
+
+.portfolio-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-grid img:hover {
+  transform: scale(1.05);
+}
+ 
+
+/* Tablet View */
+@media (max-width: 992px) {
+   .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  }
+}
+/* Mobile View */
+@media (max-width: 600px) {
+   .portfolio-grid {
+    grid-template-columns: 1fr; /* 1 per row */
+  }
+
+  .portfolio-grid img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Extra adjustments for smaller screens */
+@media (max-width: 768px) {
+  .portfolio-title {
+    font-size: 1.5rem;
+  }
+ .filter-menu {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 12px;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    scrollbar-width: none; /* hide scrollbar in Firefox */
+  }
+
+  .filter-menu::-webkit-scrollbar {
+    display: none; /* hide scrollbar in Chrome/Safari */
+  }
+
+  .filter-menu button {
+    background: #222;
+    color: #ccc;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .filter-menu button:hover,
+  .filter-menu button.active {
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+  }
+}

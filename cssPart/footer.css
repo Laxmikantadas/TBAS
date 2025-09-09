@@ -1,0 +1,154 @@
+/* Footer */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ---------------- Footer ---------------- */
+.footer {
+  margin-top: 50px;
+  background: #0034d1;   /* Blue background */
+  color: #fff;
+  padding: 50px 10%;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+/* ------------ Left Column ------------ */
+.footer-left {
+  flex: 1;
+  min-width: 220px;
+}
+.footer-logo {
+  max-width: 140px;
+  margin-bottom: 20px;
+}
+.footer-follow {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.footer-socials a {
+  display: inline-block;
+  margin-right: 12px;
+  color: #fff;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+.footer-socials a:hover {
+  color: #ffcc00;
+}
+
+/* ------------ Middle Column ------------ */
+.footer-middle {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+  gap: 60px;
+  min-width: 300px;
+}
+.footer-col h3 {
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffcc00;
+}
+
+/* ------------ Right Column ------------ */
+.footer-right {
+  flex: 1.2;
+  min-width: 250px;
+}
+.footer-right h3 {
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+.footer-right p {
+  font-size: 14px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+.footer-right a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s ease;
+  
+}
+.footer-right a:hover {
+  color: #ffcc00;
+}
+
+/* ------------ Form ------------ */
+.footer-form {
+  display: flex;
+  margin-top: 15px;
+  border: 1px solid #fff;
+  /* border-radius: 4px; */
+  overflow: hidden;
+}
+.footer-form input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+
+}
+.footer-form button {
+  background: #fff;
+  color: #0034d1;
+  border: none;
+  padding: 0 14px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.footer-form button:hover {
+  background: #ffcc00;
+  color: #000;
+}
+
+/* ------------ Responsive ------------ */
+@media (max-width: 992px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .footer-middle {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  .footer-right {
+    text-align: center;
+  }
+  .footer-form {
+    justify-content: center;
+  }
+}
